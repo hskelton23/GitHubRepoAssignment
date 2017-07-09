@@ -1,0 +1,34 @@
+Last login: Sun Jul  2 16:11:10 on ttys000
+tests-MacBook-Air:~ test$ cd desktop/
+tests-MacBook-Air:desktop test$ mkdir test
+mkdir: test: File exists
+tests-MacBook-Air:desktop test$ ls
+destination	test
+tests-MacBook-Air:desktop test$ cd test/
+tests-MacBook-Air:test test$ touch index.html style.css commands.txt
+tests-MacBook-Air:test test$ ls
+commands.txt	index.html	style.css
+tests-MacBook-Air:test test$ cp index.html index_2.html
+tests-MacBook-Air:test test$ ls
+commands.txt	index.html	index_2.html	style.css
+tests-MacBook-Air:test test$ rm style.css
+tests-MacBook-Air:test test$ ls
+commands.txt	index.html	index_2.html
+tests-MacBook-Air:test test$ cd ..
+tests-MacBook-Air:desktop test$ mkdir destination
+mkdir: destination: File exists
+tests-MacBook-Air:desktop test$ ls
+destination	test
+tests-MacBook-Air:desktop test$ mv test/index_2.html destination/
+tests-MacBook-Air:desktop test$ cd destination/
+tests-MacBook-Air:destination test$ ls
+index_2.html	test
+tests-MacBook-Air:destination test$ cd ..
+tests-MacBook-Air:desktop test$ cd test/
+tests-MacBook-Air:test test$ ls
+commands.txt	index.html
+tests-MacBook-Air:test test$ cd ..
+tests-MacBook-Air:desktop test$ rm -rf destination/
+tests-MacBook-Air:desktop test$ ls
+test
+tests-MacBook-Air:desktop test$ 

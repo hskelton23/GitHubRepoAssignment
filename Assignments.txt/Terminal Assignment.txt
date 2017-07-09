@@ -1,0 +1,56 @@
+Last login: Sun Jul  2 17:10:33 on ttys000
+tests-MacBook-Air:~ test$ cd desktop/
+tests-MacBook-Air:desktop test$ mkdir DojoAssignments
+tests-MacBook-Air:desktop test$ cd DojoAssignments
+tests-MacBook-Air:DojoAssignments test$ mkdir WebFundamentals Python MEAN Ruby iOS netCore
+tests-MacBook-Air:DojoAssignments test$ ls
+MEAN		Ruby		iOS
+Python		WebFundamentals	netCore
+tests-MacBook-Air:DojoAssignments test$ touch ./MEAN/about.txt ./Python/about.txt ./Ruby/about.txt ./WebFundamentals/about.txt ./iOS/about.txt ./netCore/about.txt
+tests-MacBook-Air:DojoAssignments test$ cd WebFundamentals
+tests-MacBook-Air:WebFundamentals test$ ls
+about.txt
+tests-MacBook-Air:WebFundamentals test$ mkdir Git HTML CSS Javascript
+tests-MacBook-Air:WebFundamentals test$ touch ./Git/about.txt ./HTML/about.txt ./CSS/about.txt ./Javascript/about.txt
+tests-MacBook-Air:WebFundamentals test$ cd HTML
+tests-MacBook-Air:HTML test$ ls
+about.txt
+tests-MacBook-Air:HTML test$ touch indentation.html
+tests-MacBook-Air:HTML test$ ls
+about.txt		indentation.html
+tests-MacBook-Air:HTML test$ cd ..
+tests-MacBook-Air:WebFundamentals test$ cd ..
+tests-MacBook-Air:DojoAssignments test$ ls -R
+MEAN		Ruby		iOS
+Python		WebFundamentals	netCore
+
+./MEAN:
+about.txt
+
+./Python:
+about.txt
+
+./Ruby:
+about.txt
+
+./WebFundamentals:
+CSS		Git		HTML		Javascript	about.txt
+
+./WebFundamentals/CSS:
+about.txt
+
+./WebFundamentals/Git:
+about.txt
+
+./WebFundamentals/HTML:
+about.txt		indentation.html
+
+./WebFundamentals/Javascript:
+about.txt
+
+./iOS:
+about.txt
+
+./netCore:
+about.txt
+tests-MacBook-Air:DojoAssignments test$ 
